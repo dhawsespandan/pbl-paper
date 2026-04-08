@@ -1,0 +1,17 @@
+
+============================================================
+EXPERIMENT A: LoRA Rank Sweep (r ∈ {4, 8, 16, 32})
+Target modules fixed: query, value
+============================================================
+
+--- Rank r=4 ---
+Loading weights:   0%|                                  | 0/223 [00:00<?, ?it/s]Loading weights: 100%|██████████████████████| 223/223 [00:00<00:00, 8398.55it/s]
+[1mDinov2ForImageClassification LOAD REPORT[0m from: facebook/dinov2-small
+Key               | Status  | 
+------------------+---------+-
+classifier.bias   | [31mMISSING[0m | 
+classifier.weight | [31mMISSING[0m | 
+
+Notes:
+- [31mMISSING:[0m	[3mthose params were newly initialized because missing from the checkpoint. Consider training on your downstream task.[0m
+Trainable params: 73,728 (0.333%)

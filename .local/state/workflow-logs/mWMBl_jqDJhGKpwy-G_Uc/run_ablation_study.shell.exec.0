@@ -1,0 +1,18 @@
+
+============================================================
+EXPERIMENT A: LoRA Rank Sweep (r ∈ {4, 8, 16, 32})
+Target modules fixed: query, value
+============================================================
+
+--- Rank r=4 ---
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|                                  | 0/223 [00:00<?, ?it/s]Loading weights:   9%|██▎                      | 21/223 [00:00<00:03, 57.16it/s]Loading weights:  19%|████▋                    | 42/223 [00:00<00:02, 66.35it/s]Loading weights:  31%|███████▊                 | 70/223 [00:00<00:01, 78.28it/s]Loading weights:  65%|██████████████▊        | 144/223 [00:01<00:00, 158.03it/s]Loading weights: 100%|███████████████████████| 223/223 [00:01<00:00, 182.56it/s]
+[1mDinov2ForImageClassification LOAD REPORT[0m from: facebook/dinov2-small
+Key               | Status  | 
+------------------+---------+-
+classifier.weight | [31mMISSING[0m | 
+classifier.bias   | [31mMISSING[0m | 
+
+Notes:
+- [31mMISSING:[0m	[3mthose params were newly initialized because missing from the checkpoint. Consider training on your downstream task.[0m
+Trainable params: 73,728 (0.333%)

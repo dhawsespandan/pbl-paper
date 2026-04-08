@@ -1,0 +1,56 @@
+[1G[0K⠙[1G[0K
+> agrisense-ai-client@1.0.0 dev
+> vite
+
+[1G[0K⠙[1G[0KServer running on http://localhost:3001
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J
+  [32m[1mVITE[22m v6.4.2[39m  [2mready in [0m[1m1348[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5000[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://172.31.112.34:[1m5000[22m/[39m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+[32mINFO[0m:     Started server process [[36m226[0m]
+[32mINFO[0m:     Waiting for application startup.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|                                  | 0/223 [00:00<?, ?it/s]Loading weights:   9%|██▏                      | 20/223 [00:00<00:03, 65.84it/s]Loading weights:  17%|████▎                    | 39/223 [00:00<00:02, 67.54it/s]Loading weights:  45%|██████████▎            | 100/223 [00:00<00:00, 148.76it/s]Loading weights: 100%|███████████████████████| 223/223 [00:00<00:00, 261.56it/s]
+[1mDinov2ForImageClassification LOAD REPORT[0m from: facebook/dinov2-small
+Key               | Status  | 
+------------------+---------+-
+classifier.weight | [31mMISSING[0m | 
+classifier.bias   | [31mMISSING[0m | 
+
+Notes:
+- [31mMISSING:[0m	[3mthose params were newly initialized because missing from the checkpoint. Consider training on your downstream task.[0m
+Router [DINOv2+LoRA | facebook/dinov2-small] loaded — classes: ['flower', 'fruit', 'leaf']  val_acc: ?
+FruitDisease [EfficientNet-B2] loaded — classes: ['Anthracnose', 'Blotch', 'Healthy', 'Rot', 'Scab']  val_acc: 0.8799
+FruitSeverity [EfficientNet-B4] loaded ← trained weights  (weights/fruit_severity_trained.pth)
+  Severity = affected_pixel_area / total_fruit_pixel_area × 100
+LeafDisease [EfficientNet-V2-S | v2 (rust-tuned)] loaded — classes: ['alternaria leaf spot', 'brown spot', 'gray spot', 'healthy leaf', 'rust']  val_acc: 1.0
+/home/runner/workspace/agrisense-ai-main/model-service/main.py:283: RuntimeWarning: [flower_cluster] YOLO load failed (libxcb.so.1: cannot open shared object file: No such file or directory). Using mock predictor — predictions are meaningless until real weights are supplied.
+  import models.flower_cluster.model                as _flower_mod
+✅ All models loaded — service ready
+[32mINFO[0m:     Application startup complete.
+[32mINFO[0m:     Uvicorn running on [1mhttp://127.0.0.1:8000[0m (Press CTRL+C to quit)
