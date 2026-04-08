@@ -17,6 +17,10 @@ author = "agent"
 task = "workflow.run"
 args = "Start application"
 
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Run Ablation Study"
+
 [[workflows.workflow]]
 name = "Start application"
 author = "agent"
@@ -28,6 +32,17 @@ waitForPort = 5000
 
 [workflows.workflow.metadata]
 outputType = "webview"
+
+[[workflows.workflow]]
+name = "Run Ablation Study"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python -u files/ablation_lora.py --data_dir pbl-transformer-main/router_dataset --experiment all --epochs 10 --output_dir agrisense-ai-main/ablation_results"
+
+[workflows.workflow.metadata]
+outputType = "console"
 
 [[ports]]
 localPort = 5000
