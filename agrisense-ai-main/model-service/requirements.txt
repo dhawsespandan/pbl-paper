@@ -1,0 +1,17 @@
+fastapi
+uvicorn[standard]
+python-multipart
+python-dotenv
+pydantic
+
+torch
+torchvision
+pillow
+numpy
+
+transformers
+peft
+accelerate
+safetensors
+
+ultralytics

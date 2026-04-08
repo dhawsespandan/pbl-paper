@@ -1,0 +1,92 @@
+{
+  "lora": {
+    "accuracy": 0.07599699021820917,
+    "macro_f1": 0.07308063916759568,
+    "per_class": {
+      "flower": {
+        "precision": 0.02257636122177955,
+        "recall": 0.04047619047619048,
+        "f1-score": 0.028985507246376812,
+        "support": 420.0
+      },
+      "fruit": {
+        "precision": 0.1836734693877551,
+        "recall": 0.17647058823529413,
+        "f1-score": 0.18,
+        "support": 459.0
+      },
+      "leaf": {
+        "precision": 0.022222222222222223,
+        "recall": 0.006666666666666667,
+        "f1-score": 0.010256410256410256,
+        "support": 450.0
+      }
+    },
+    "trainable_params": 0,
+    "total_params": 22206339,
+    "trainable_pct": 0.0,
+    "latency_mean_ms": 818.052824000015,
+    "latency_std_ms": 175.12156843811027,
+    "confusion_matrix": [
+      [
+        17,
+        330,
+        73
+      ],
+      [
+        319,
+        81,
+        59
+      ],
+      [
+        417,
+        30,
+        3
+      ]
+    ]
+  },
+  "efficientnet_b0": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "per_class": {
+      "flower": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 420.0
+      },
+      "fruit": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 459.0
+      },
+      "leaf": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 450.0
+      }
+    },
+    "total_params": 4011391,
+    "latency_mean_ms": 45.08538599998246,
+    "latency_std_ms": 12.804011500947368,
+    "confusion_matrix": [
+      [
+        420,
+        0,
+        0
+      ],
+      [
+        0,
+        459,
+        0
+      ],
+      [
+        0,
+        0,
+        450
+      ]
+    ]
+  }
+}

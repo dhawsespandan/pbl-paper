@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Build / frontend
+client/dist/
+
+# Python bytecode & caches
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+
+# Local env (use .env.example as a template)
+.env
+.env.local
+
+# Runtime uploads (FastAPI saves to temp/)
+model-service/temp/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
